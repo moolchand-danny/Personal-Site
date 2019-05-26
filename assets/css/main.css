@@ -12,6 +12,8 @@
 		vertical-align: baseline;
 	}
 
+
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1089,7 +1091,7 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 100vh;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/nyc.gif");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
