@@ -1,12 +1,99 @@
-<html lang="en">
+<!DOCTYPE HTML>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>Danny R Moolchand</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
-    <h1>Welcome to the site of Danny Moolchand</h1>
-    <p>For any inquiries please contact me at contact@dannyrm.com</p>
+
+<body id="top">
+
+    <section id="banner" data-video="images/banner">
+
+        <video autoplay muted loop id="myVideo">
+                <source src="images/nyc.mp4" type="video/mp4">
+              </video>
+
+        <div class="inner">
+            <header>
+                <h1>Danny Moolchand</h1>
+                <p>Welcome to my personal website.</p>
+            </header>
+            <a href="#sec" class="more">Learn More</a>
+        </div>
+    </section>
+
+    <div id="sec">
+        <div class="inner">
+            <h1> About Me </h1>
+            <p>My name's Danny. That's all you need to know</p>
+        </div>
+
+        <div class="inner">
+            <h1> Contact </h1>
+            <p>contact@dannyrm.com</p>
+        </div>
+
+
+    </div> <!-- End of sec -->
+
+    <!-- Projects -->
+    <div id="main">
+        <h1> Projects </h1>
+        <div class="inner">
+
+            <!-- Boxes -->
+            <div class="thumbnails">
+
+                <div class="box">
+                    <div class="inner">
+                        <h3>Study Spots Web App</h3>
+                        <p>A web application created for my Intro to Software Engineering course. Students can select
+                            buildings on UF's campus and create/reserve a room for studying. </p>
+                        <button class='button fit'
+                            onclick="window.location.href = 'https://study-spots-group3-1250-test.herokuapp.com/';">View
+                            Deployment</button>
+                        <button class='button fit'
+                            onclick="window.location.href = 'https://github.com/moolchand-danny/study-spots';">View
+                            Source</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="https://youtu.be/s6zR2T9vn2c" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h3>Personal Website</h3>
+                        <p>The site you are on right now.</p>
+                        <br>
+                        <br>
+                        <br>
+                        <button class='button fit'
+                            onclick="window.location.href = 'https://dannyrm.com';">View
+                            Website</button>
+                        <button class='button fit'
+                            onclick="window.location.href = 'https://github.com/moolchand-danny/Personal-Site';">View
+                            Source</button>
+                    </div>
+                </div>
+
+
+
+            </div> <!-- End of Boxes -->
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
