@@ -1,0 +1,195 @@
+\documentclass{article}
+\usepackage[cm]{fullpage}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{environ}
+
+\hypersetup{breaklinks=true,%
+pagecolor=white,%
+colorlinks=true,%
+linkcolor=cyan,%
+urlcolor=MyDarkBlue}
+
+\definecolor{MyDarkBlue}{rgb}{0,0.0,0.45}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Formatting parameters  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\tabin}
+\setlength{\tabin}{1em}
+\newlength{\secsep}
+\setlength{\secsep}{0.1cm}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{0in}
+\setlength{\itemsep}{0in}
+\setlength{\topsep}{0in}
+\setlength{\tabcolsep}{0in}
+
+\definecolor{contactgray}{gray}{0.3}
+\pagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Template Definitions  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-6pt} \hrulefill \\ \vspace*{-15pt}}
+\newcommand{\name}[1]{\begin{center}\textsc{\Huge#1}\\\end{center}}
+\newcommand{\program}[1]{\begin{center}\textsc{#1}\end{center}}
+\newcommand{\contact}[1]{\begin{center}\color{contactgray}{\small#1}\end{center}}
+
+\newenvironment{tabbedsection}[1]{
+  \begin{list}{}{
+      \setlength{\itemsep}{0pt}
+      \setlength{\labelsep}{0pt}
+      \setlength{\labelwidth}{0pt}
+      \setlength{\leftmargin}{\tabin}
+      \setlength{\rightmargin}{\tabin}
+      \setlength{\listparindent}{0pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\parskip}{0pt}
+      \setlength{\partopsep}{0pt}
+      \setlength{\topsep}{#1}
+    }
+  \item[]
+}{\end{list}}
+
+\newenvironment{nospacetabbing}{
+    \begin{tabbing}
+}{\end{tabbing}\vspace{-1.2em}}
+
+\newenvironment{resume_header}{}{\vspace{0pt}}
+
+\newenvironment{resume_section}[1]{ 
+  \filbreak
+  \vspace{2\secsep}
+  \MakeUppercase{ \large#1}
+  %\textsc{\large#1}
+  \lineunder
+  \begin{tabbedsection}{\secsep}
+}{\end{tabbedsection}}
+
+\newenvironment{resume_subsection}[2][]{
+  \textbf{#2} \hfill {\footnotesize #1} \hspace{2em}
+  \begin{tabbedsection}{0.5\secsep}
+}{\end{tabbedsection}}
+
+\newenvironment{resume_subsection2}[2][]{
+  \textbf{#2} \hfill {\footnotesize #1} \hspace{2em}
+}
+
+\newenvironment{subitems}{
+  \renewcommand{\labelitemi}{-}
+  \begin{itemize}
+      \setlength{\labelsep}{1em}
+}{\end{itemize}}
+
+\newenvironment{resume_employer}[4]{
+  \vspace{\secsep}
+  \textbf{#1} \\ 
+  \indent {\small #2} \hfill {\footnotesize#3 (#4)}
+  \begin{tabbedsection}{0pt}
+  \begin{subitems}
+}{\end{subitems}\end{tabbedsection}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Start Document     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%% Header %%%%  
+\begin{resume_header}
+\name{DANNY MOOLCHAND}
+\program{}
+\contact{contact@dannyrm.com 
+\hspace{1cm} 352-216-6511 
+\hspace{1cm}www.dannyrm.com
+\hspace{1cm}github.com/moolchand-danny
+}
+
+\end{resume_header}
+
+%%%% Education Section %%%%  
+\begin{resume_section}{Education}
+  \begin{resume_subsection}[Gainesville, FL (2016--2020)]{University of Florida}
+    \begin{subitems}
+      \item Bachelor of Science (BS): Computer Engineering
+      % \item Cumulative GPA: 3.00
+      \item Relevant Coursework: Data Structures and Algorithms, Introduction to Software Engineering, Information and Database Systems, Microprocessor Applications, Introduction to Computer Organization, Signals and Systems, Introduction to Software Testing (IP), Introduction to Cryptology (IP) 
+    \end{subitems}
+  \end{resume_subsection}
+\end{resume_section}
+
+%%%% Technical Skills %%%%  
+\begin{resume_section}{Technical Skills}
+  \begin{nospacetabbing}
+
+  \textbf{Programming}  \= ARM/AVR Assembly, C/C++, Java, Python, HTML, CSS, Javascript, VHDL, MySQL, MATLAB\\*
+  \textbf{Frameworks} \> MongoDB, AngularJS, Express.js, Node.js, JUnit4\\*
+  \textbf{IDE} \> Eclipse, Visual Studio, Atmel Studio\\*
+  \textbf{Technologies} \> GitHub, Git, Altera Quartus, MATLAB\\*
+  \textbf{Knowledge} \> Object-oriented principles, Agile development, Test-Driven Development\\*
+  \end{nospacetabbing}
+\end{resume_section}
+
+%%%% Projects %%%%  
+\begin{resume_section}{Projects}
+  \begin{resume_subsection}[]{Piano Synthesizer using Atmel XMEGA Microprocessor}
+  \begin{subitems}
+    \item \textit{C, Assembly}
+    \item Created a  piano synthesizer using the ATXMEGA128A1U microprocessor. Using keyboard keys as piano keys, the user is able to play the 6th octave C scale. This program utilized a sin-wave look-up table and ADC conversion to create necessary frequency through the speaker.
+    \end{subitems}
+  \end{resume_subsection}
+  
+   \begin{resume_subsection}[]{Study Spots Web Application for CEN3031: Introduction to Software Engineering}
+  \begin{subitems}
+    \item \textit{JavaScript, HTML, CSS, NodeJS, AngularJS, Express.js, MongoDB, Git, Github, Agile development}
+    \item Contributed to the design and development of study room reservation system. Users view buildings on UF campus and can view, create, and reserve rooms for studying
+    \end{subitems}
+  \end{resume_subsection}
+\end{resume_section}
+
+
+ %%%% Involvement %%%%  
+\begin{resume_section}{Involvement}
+  \begin{resume_employer}{UF Solar Gators}{Member, Electrical Team}{Gainesville, FL}{August 2019 - Present}
+    \item Currently utilizing Altium to design PCBs for the electrical system of a solar powered car.
+  \end{resume_employer}
+  
+  \begin{resume_employer}{Association for Computer Engineers (ACE)}{Member}{Gainesville, FL}{August 2018 - Present}
+    \item Collaborated and networked with interdisciplinary students to work on future projects
+    \item Expanded membership of the club through recruitment
+  \end{resume_employer}
+
+\end{resume_section}
+ 
+ %%%% Work Experience %%%%  
+\begin{resume_section}{Work Experience}
+  \begin{resume_employer}{Dave Home Improvement  Inc.}{Laborer}{Orlando, FL}{Winter 2018}
+    \item Assisted head carpenter in removing furniture and carpet from homes and installing new flooring
+    \item Maintained and performed general maintenance on tools such as repairs, changing belts, etc
+  \end{resume_employer}
+  
+  \begin{resume_employer}{Apopka Marathon}{Stock Clerk}{Apopka, FL}{Summer 2015}
+    \item Imported new inventory and created product deals in VeriFone Sapphire register database using a proprietary program.
+    \item Maintained and restocked low inventory on sales floor
+  \end{resume_employer}
+\end{resume_section}
+
+
+%%%% Awards %%%%  
+\begin{resume_section}{Awards and Honors}
+    \begin{resume_subsection2}[August 2016 - Present]{Florida Bright Futures Scholarship}
+    \end{resume_subsection2}
+    
+    \begin{resume_subsection2}[May 2016]{Lake County Top Scholars Award}
+    \end{resume_subsection2}
+\end{resume_section}
+
+
+%\vspace*{\fill} Last Updated: September 2019
+
+\end{document}
