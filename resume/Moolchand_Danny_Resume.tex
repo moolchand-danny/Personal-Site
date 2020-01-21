@@ -3,8 +3,10 @@
 \usepackage{color}
 \usepackage{hyperref}
 \usepackage{environ}
+\usepackage{fontawesome}
 
 \hypersetup{breaklinks=true,%
+pagecolor=white,%
 colorlinks=true,%
 linkcolor=cyan,%
 urlcolor=MyDarkBlue}
@@ -26,7 +28,7 @@ urlcolor=MyDarkBlue}
 \setlength{\topsep}{0in}
 \setlength{\tabcolsep}{0in}
 
-\definecolor{contactgray}{gray}{0.1}
+% \definecolor{contactgray}{black}{0.3}
 \pagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -47,7 +49,7 @@ urlcolor=MyDarkBlue}
       \setlength{\rightmargin}{\tabin}
       \setlength{\listparindent}{0pt}
       \setlength{\parsep}{0pt}
-      \setlength{\parskip}{1pt}
+      \setlength{\parskip}{0pt}
       \setlength{\partopsep}{0pt}
       \setlength{\topsep}{#1}
     }
@@ -103,41 +105,51 @@ urlcolor=MyDarkBlue}
 \begin{resume_header}
 \name{DANNY MOOLCHAND}
 \program{}
-\contact{contact@dannyrm.com 
-\hspace{1cm} 352-216-6511 
-\hspace{1cm}www.dannyrm.com
-\hspace{1cm}github.com/moolchand-danny
+\contact{\faicon{envelope} contact@dannyrm.com 
+\hspace{1cm} \faicon{phone-square} 352-216-6511 
+\hspace{1cm} \faicon{share-square} www.dannyrm.com
+\hspace{1cm} \faicon{github-square} \faicon{linkedin} /moolchand-danny
 }
-\end{resume_header}
 
+\end{resume_header}
 
 %%%% Education Section %%%%  
 \begin{resume_section}{Education}
-  \begin{resume_subsection}[Gainesville, FL (2016--2020)]{University of Florida}
+  \begin{resume_subsection}[Gainesville, FL (August 2016 -- August 2020)]{University of Florida}
     \begin{subitems}
       \item Bachelor of Science (BS): Computer Engineering
-      % \item Cumulative GPA: 3.00
-      \item Relevant Coursework: Data Structures and Algorithms, Introduction to Software Engineering, Information and Database Systems, Microprocessor Applications, Introduction to Computer Organization, Signals and Systems, Introduction to Software Testing (IP), Introduction to Cryptology (IP) 
+      %\item Cumulative GPA: 3.00
+      \item Relevant Coursework: Data Structures and Algorithms, Introduction to Software Engineering, Information and Database Systems, Microprocessor Applications, Introduction to Computer Organization, Introduction to Software Testing, Introduction to Cryptology, Software Security (IP), Digital Design (IP)
     \end{subitems}
   \end{resume_subsection}
 \end{resume_section}
-
 
 %%%% Technical Skills %%%%  
 \begin{resume_section}{Technical Skills}
   \begin{nospacetabbing}
 
-  \textbf{Programming}  \= ARM/AVR Assembly, C/C++, Java, Python, HTML, CSS, Javascript, VHDL, MySQL, MATLAB\\*
+  \textbf{Programming}  \= C/C++, Java, ARM/AVR Assembly, Python, HTML, CSS, Javascript, VHDL, MySQL, MATLAB\\*
   \textbf{Frameworks} \> MongoDB, AngularJS, Express.js, Node.js, JUnit4\\*
-  \textbf{IDE} \> Eclipse, Visual Studio, Atmel Studio\\*
-  \textbf{Technologies} \> GitHub, Git, Altera Quartus, Altium(IP)\\*
-  \textbf{Knowledge} \> Object-oriented principles, Agile development, Test-Driven Development\\*
+  \textbf{IDEs} \> Eclipse, Visual Studio/Code, Atmel Studio\\*
+  \textbf{Technologies} \> GitHub, Git, Altera Quartus, MATLAB, Altium, Google App Engine\\*
+  \textbf{Testing} \> Jenkins, TravisCI, Cypress\\*
+  \textbf{Knowledge} \> Object-oriented principles, Agile development, Test-Driven Development \\*
   \end{nospacetabbing}
 \end{resume_section}
 
-
 %%%% Projects %%%%  
 \begin{resume_section}{Projects}
+
+ \begin{resume_subsection}[]{Online Banking System for CIS4930: Introduction to Software Testing}
+  \begin{subitems}
+    \item \textit{Python, PyTest, Cypress, Google App Engine, TravisCI, YAML}
+    \item As a group, created a mock online banking system where users could create an account, deposit money, and buy different amounts of company stocks.
+    \item Responsible for learning Google API/Services for mounting and deploying project through Google App Engine (GAP)
+    \item Responsible for writing Cypress end-to-end tests to verify functional endpoints
+    \item Responsible for setting up Travis Continuous Integration server to run all unit, integration, and end-to-end tests then deploy project on GAP on successful completion
+    \end{subitems}
+  \end{resume_subsection}
+
   \begin{resume_subsection}[]{Piano Synthesizer using Atmel XMEGA Microprocessor}
   \begin{subitems}
     \item \textit{C, Assembly}
@@ -154,20 +166,19 @@ urlcolor=MyDarkBlue}
 \end{resume_section}
 
 
-
  %%%% Involvement %%%%  
 \begin{resume_section}{Involvement}
-  \begin{resume_employer}{UF Solar Gators}{Member, Electrical Team}{Gainesville, FL}{August 2019 - Present}
-    \item Currently utilizing Altium to design PCBs for the electrical system of a solar powered car.
+  \begin{resume_employer}{UF Solar Gators}{Member, Electrical Team - Embedded Telemetry}{Gainesville, FL}{August 2019 - Present}
+    \item Utilized Altium to learn how to design a prototype of Solar Car's PCB power board.
+    \item Currently writing driver code for a TFT display. Will be implemented into Solar Car on the dashboard for measurements like battery temperature, battery capacity, solar panel voltage, and vehicle acceleration.
   \end{resume_employer}
   
   \begin{resume_employer}{Association for Computer Engineers (ACE)}{Member}{Gainesville, FL}{August 2018 - Present}
     \item Collaborated and networked with interdisciplinary students to work on future projects
     \item Expanded membership of the club through recruitment
   \end{resume_employer}
+
 \end{resume_section}
-
-
  
  %%%% Work Experience %%%%  
 \begin{resume_section}{Work Experience}
@@ -177,23 +188,26 @@ urlcolor=MyDarkBlue}
   \end{resume_employer}
   
   \begin{resume_employer}{Apopka Marathon}{Stock Clerk}{Apopka, FL}{Summer 2015}
-    \item Imported new inventory and created product deals in VeriFone Sapphire register database using a proprietary program.
+    \item Imported inventory/created product deals in VeriFone Sapphire register database using proprietary software.
     \item Maintained and restocked low inventory on sales floor
   \end{resume_employer}
 \end{resume_section}
 
 
-
 %%%% Awards %%%%  
 \begin{resume_section}{Awards and Honors}
+
     \begin{resume_subsection2}[August 2016 - Present]{Florida Bright Futures Scholarship}
     \end{resume_subsection2}
     
     \begin{resume_subsection2}[May 2016]{Lake County Top Scholars Award}
     \end{resume_subsection2}
+    
+    \begin{resume_subsection2}[December 2019]{Dean's List (Fall 2019)}
+    \end{resume_subsection2}
 \end{resume_section}
 
 
+%\vspace*{\fill} Last Updated: September 2019
 
-% \marginpar{}
 \end{document}

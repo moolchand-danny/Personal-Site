@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.20)  20 SEP 2019 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.9.20)  21 JAN 2020 17:35
 entering extended mode
 **"c:/Users/Danny/MY REPOSITORIES/Personal-Site/resume/Moolchand_Danny_Resume.tex"
 ("c:/Users/Danny/MY REPOSITORIES/Personal-Site/resume/Moolchand_Danny_Resume.tex"
@@ -135,28 +135,34 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks15
-)
-Package hyperref Info: Option `breaklinks' set `true' on input line 10.
-Package hyperref Info: Option `colorlinks' set `true' on input line 10.
+) ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\fontawesome.sty"
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+ ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\fontawesomesymbols-generic.tex") ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\fontawesomesymbols-pdftex.tex"))
+Package hyperref Info: Option `breaklinks' set `true' on input line 12.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 12.
 \tabin=\skip45
 \secsep=\skip46
- ("c:/Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.aux")
+("c:\Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.aux")
 \openout1 = `Moolchand_Danny_Resume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
  ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
@@ -172,7 +178,7 @@ LaTeX Font Info:    ... okay on input line 100.
 \everyMPtoPDFconversion=\toks17
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring ON on input line 100.
+Package hyperref Info: Link coloring ON on input line 102.
  ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  ("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
@@ -180,37 +186,60 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 100.
-LaTeX Info: Redefining \pageref on input line 100.
-LaTeX Info: Redefining \nameref on input line 100.
- ("c:/Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.out") ("c:/Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.out")
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
 \@outlinefile=\write3
 \openout3 = `Moolchand_Danny_Resume.out'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
- [1
+
+
+c:/Users/Danny/MY REPOSITORIES/Personal-Site/resume/Moolchand_Danny_Resume.tex:112: LaTeX Error: Undefined color `contactgray'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 }
+       
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for U+fontawesometwo on input line 112.
+("C:\Users\Danny\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\ufontawesometwo.fd"
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+) [1
 
 {C:/Users/Danny/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
- ("c:/Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
-Package rerunfilecheck Info: File `Moolchand_Danny_Resume.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+ ("c:\Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+
+
+Package rerunfilecheck Warning: File `Moolchand_Danny_Resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Moolchand_Danny_Resume.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 4821 strings out of 492895
- 73899 string characters out of 3123735
- 166919 words of memory out of 3000000
- 8734 multiletter control sequences out of 15000+200000
- 5792 words of font info for 21 fonts, out of 3000000 for 9000
+ 6305 strings out of 492895
+ 94072 string characters out of 3123735
+ 186168 words of memory out of 3000000
+ 10206 multiletter control sequences out of 15000+200000
+ 6108 words of font info for 22 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,5n,21p,381b,314s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "c:/Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.pdf" (1 page, 113961 bytes).
+ 28i,5n,21p,394b,562s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontawesome/fontawesometwo.enc}<C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Danny/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "c:\Users\Danny\MY REPOSITORIES\Personal-Site\resume\Moolchand_Danny_Resume.pdf" (2 pages, 136504 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 48 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
